@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+@font-face {
+    font-family: 'ND';
+    src: url('fontes/NDR.ttf');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+}
+
+.header {
+  margin: 0;
+  background-image: url('imagens/image.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px;
+  color: #545454;
+  position: relative; 
+  z-index: 1; 
+  border: 2px solid #ffffff;
+}
+
+nav {
+background-color: #38B6FF;
+padding: 10px;
+position: relative;
+z-index: 2;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+nav ul li {
+display: inline-block;
+margin-right: 20px;
+}
+
+nav ul li.sair {
+margin-left: auto; /* Empurra o item sair para a extrema direita */
+margin-right: 0; /* Remove o margin-right específico para o item sair */
+}
+
+nav ul li.sair a {
+display: flex;
+justify-content: center; /* Centraliza o conteúdo horizontalmente */
+align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+height: 40px;
+}
+
+nav ul li a {
+color: #020202;
+text-decoration: none;
+font-size: 24px;
+font-weight: 800;
+transition: all linear 160ms;
+padding: 10px;
+}
+
+nav ul li a:hover {
+color: #ffffff;
+}
+
+nav ul li:nth-child(1) a {
+color: #ffffff;
+}
+
+nav ul li.sair a img {
+height: 30px; /* Define a altura da imagem */
+width: auto; /* Mantém a proporção da imagem */
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.site-content {
+  min-height: 100vh;
+  background-image: url(imagens/KgJogos.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+#destaque {
+  font-family: 'ND', sans-serif; /* Define a fonte 'ND' como prioritária, seguida de Arial e fontes genéricas sans-serif */
+  font-size: 4em; /* Tamanho da fonte */
+  text-decoration: none;
+  margin: auto;
+  margin-top:80px;
+  margin-bottom: 80px;
+  color: #ffffff; /* Cor do texto */
+  transition: transform 1s;
+
+}
+
+#destaque:hover {
+  transform: scale(1.1);
+  
+}
+  
+.container {
+    width: 100%;
+    width: 41%;
+    height: 340px;
+    display: flex;
+    gap: 10px;
+    margin-inline: 60px;
+    margin-left: 29%;
+    margin-top: 50px;
+    position: relative; /* Para que o rodapé não sobreponha o conteúdo */
+    z-index: 2; /* Garante que o conteúdo fique acima do rodapé */
+  }
+  
+.card {
+    min-width: 70px;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    transition: flex-grow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  
+    --transition-timing: 0.35s;
+  }
+  /* .card.active {
+    flex-grow: 100;
+  } */
+.card:hover {
+    flex-grow: 7;
+  }
+  
+.card > .background {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.4);
+    z-index: -1;
+    transition: var(--transition-timing) ease;
+  }
+.card:hover > .background {
+    filter: brightness(1);
+  }
+  
+.card > .card-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
+    overflow: hidden;
+    transition: var(--transition-timing);
+    z-index: 10;
+  }
+.card:hover > .card-content {
+    inset: 20px;
+    top: auto;
+  }
+  
+.card-content > * {
+    transition: var(--transition-timing);
+  }
+  
+.card-content > .profile-image {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+.card:hover .profile-image {
+    border: 1px solid #38B6FF;
+  }
+.profile-image > svg {
+    stroke: #fefefe;
+  }
+.card:hover .profile-image > svg {
+    stroke: #38B6FF;
+  }
+  
+.card-content > .title {
+    color: #ffffff;
+    white-space: pre;
+    margin-left: 10px;
+    translate: 0 100%;
+    opacity: 0;
+  }
+.card:hover .title {
+    color: #ffffff;
+    opacity: 1;
+    translate: 0 0;
+  }
+  
+.card > .backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    z-index: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  }
+
+footer {
+    background-image: url("imagens/footer.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+    height: calc(100vw * 9 / 16); /* Mantém a proporção 16:9 da imagem */
+    color: white;
+}
+.btn {
+  max-height: 26px;
+  width: 40px;
+  left: 92.5%;
+position: absolute;
+overflow: hidden;
+}

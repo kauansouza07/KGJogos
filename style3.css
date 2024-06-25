@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@font-face {
+    font-family: 'ND';
+    src: url('fontes/NDR.ttf');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+}
+
+/* Estilo para o conteúdo principal */
+.site-content {
+  min-height: 100vh;
+  background-image: url(imagens/biblio.png);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+        .game-library {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 15px;
+            gap: 20px;
+        }
+
+        .destaque {
+          font-family: 'ND', sans-serif; /* Define a fonte 'ND' como prioritária, seguida de Arial e fontes genéricas sans-serif */
+          font-size: 4em; /* Tamanho da fonte */
+          color: #ffffff; /* Cor do texto */
+          text-align: center; /* Centraliza horizontalmente */
+          margin-top: 80px; /* Margem superior de 50px */
+          margin-bottom: 80px;
+        }
+
+        .game {
+            background-color: rgba(0, 0, 0, 0.877);
+            border: 1px solid #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.623);
+            transition: transform 0.2s;
+            align-items: center;
+            text-align: center; /* Alinha o texto dentro do elemento */
+            justify-content: center;
+        }
+
+        .game img {
+          width: 100%;
+          height: 200px; /* Mantém a proporção da imagem */
+          object-fit: cover; /* Ajusta a imagem para cobrir completamente o espaço disponível */
+      }
+
+        .game-title {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            color: white;
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .game-description {
+            padding: 0 10px 10px;
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px; /* Adiciona um espaçamento acima do texto */
+            margin-bottom: 10px; /* Adiciona um espaçamento abaixo do texto */
+        }
+
+        .game:hover {
+            transform: scale(1.05);
+        }
+
+        header {
+            font-family: Inter, sans-serif;
+            font-weight: 800;
+            width: 100%; 
+        }
+        
+        nav {
+            background-color: #38B6FF;
+            padding: 10px;
+            position: relative;
+            z-index: 2;
+          }
+          
+          nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center; /* Alinha os itens verticalmente ao centro */
+          }
+          
+          nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+          }
+          
+          nav ul li.sair {
+            margin-left: auto; /* Empurra o item sair para a extrema direita */
+            margin-right: 0; /* Remove o margin-right específico para o item sair */
+          }
+          
+          nav ul li.sair a {
+            display: flex;
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+            height: 20px;
+          }
+          
+          nav ul li a {
+            color: #020202;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 800;
+            transition: all linear 160ms;
+            padding: 10px;
+          }
+          
+          nav ul li a:hover {
+            color: #ffffff;
+          }
+          
+          nav ul li:nth-child(2) a {
+            color: #ffffff;
+          }
+          
+          nav ul li.sair a img {
+            height: 30px; /* Define a altura da imagem */
+            width: auto; /* Mantém a proporção da imagem */
+          }
+        
+          footer {
+            background-image: url("imagens/footer.png");
+            background-size: cover;
+            background-position: center;
+            width: 100%; /* Garante que o rodapé ocupe toda a largura */
+            height: calc(100vw * 9 / 16); /* Mantém a proporção 16:9 da imagem */
+            color: rgb(0, 0, 0);
+        }
+
+        .btn {
+          background-color: #ffffff;
+          border-radius: 10px;
+          color: #000000;
+          font-size: 14px;
+          font-weight: 600;
+          transition: all linear 160ms;
+          cursor: pointer;
+          margin: 10px auto; /* Centraliza o botão horizontalmente */
+          display: block;
+      }
+      
+      .btn:hover {
+          transform: scale(1.05);
+          background-color: #38B6FF;
+      
+      }

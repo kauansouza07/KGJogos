@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function() {
+            // Verifica se há um erro na URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var erro = urlParams.get('erro');
+
+            // Se houver erro, exibe a mensagem de erro
+            if (erro == 1) {
+                // Seleciona o elemento de mensagem de erro
+                var erroMsg = document.getElementById("erroMsg");
+                // Exibe a mensagem de erro
+                erroMsg.style.display = "block";
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="page2">
+        <form action='mostrasenha.php' method="POST" class="formLogin">
+            <div class="fraseLogin">
+                <h1>Recupere sua senha</h1>
+            </div>
+            <p>Digite seu cpf para verificar se há cadastro.</p>
+            <label for="CPF">CPF</label>
+            <input type="registro" id="cpf" name="cpf" required>
+            <p id="erroMsg" style="color: red; display: none;">CPF não cadastrados. Tente novamente.</p>
+            <a href="index.html">lembrei minha senha</a>
+            <input type="submit" value="Próximo" class="btn" />
+            <div class="frases">
+                <p>Ainda não possui uma conta?</p>
+            </div>
+            <a href="cadastro.html" class="butinho" id="butinho">CADASTRE-SE</a>
+        </form>
+    </div>
+    
+</body>
+</html>

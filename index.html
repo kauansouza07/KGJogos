@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        window.onload = function() {
+            // Verifica se há um erro na URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var erro = urlParams.get('erro');
+
+            // Se houver erro, exibe a mensagem de erro
+            if (erro == 1) {
+                // Seleciona o elemento de mensagem de erro
+                var erroMsg = document.getElementById("erroMsg");
+                // Exibe a mensagem de erro
+                erroMsg.style.display = "block";
+            }
+        };
+    </script>
+
+
+</head>
+<body>
+    <div class="page">
+        <form action="log.php" method="POST" class="formLogin">
+            <div class="fraseLogin">
+                <h1>Login</h1>
+            </div>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" name="email" autofocus="true" required/>
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite sua senha" name="password"required/>
+            <p id="erroMsg" style="color: red; display: none;">E-mail ou senha incorretos. Tente novamente.</p>
+
+            <a href="rec.html">Esqueci minha senha</a>
+            <input type="submit" value="Acessar" id="acessar" class="btn" />
+            <div class="frases">
+                <p>Ainda não possui uma conta?</p>
+            </div>
+            
+            <a href="cadastro.html" class="butinho" id="butinho">CADASTRE-SE</a>
+        </form>
+    </div>
+    
+</body>
+</html>

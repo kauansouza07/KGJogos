@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Jogos</title>
+    <link rel="stylesheet" href="style3.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li class="home"><a href="paginicial.html">Página Inicial</a></li>
+              <li class="biblio"><a href="biblioteca.html">Biblioteca</a></li>
+              <li class="carrinho"><a href="carrinho.html">Carrinho</a></li>
+              <li class="sair">
+                  <a href="index.html">
+                      <img src="imagens/sair.png" alt="Botão para a página inicial">
+                  </a>
+              </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="site-content">
+            <div class="destaque">JOGOS</div>
+    <div class="game-library">
+        <div class="game">
+            <img src="imagens/vava.png" alt="Game 1">
+            <div class="game-title">VALORANT</div>
+            <div class="game-description">Um jogo de FPS, onde você atacar ou defender um bombside. Use suas habilidades como entender. 
+
+            </div>
+            <form id="addToCartForm" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="valorant">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm').submit();">
+            
+        </div>
+        <div class="game">
+            <img src="imagens/mine.webp" alt="Game 1">
+            <div class="game-title">MINECRAFT</div>
+            <div class="game-description">Minecraft é um jogo sandbox onde os jogadores podem explorar um mundo gerado aleatoriamente, coletar recursos, construir estruturas e enfrentar monstros.  
+
+            </div>
+            <form id="addToCartForm2" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="minecraft">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm2').submit();">
+            
+        </div>
+        <div class="game">
+            <img src="imagens/read2.jpeg" alt="Game 1">
+            <div class="game-title">RED DEAD 2</div>
+            <div class="game-description">Red Dead Redemption 2 é um jogo de ação e aventura em mundo aberto, situado no Velho Oeste, onde os jogadores vivem a história de Arthur Morgan, um fora-da-lei em fuga.
+
+            </div>
+            <form id="addToCartForm1" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="red dead 2">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm1').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/01.webp" alt="Game 1">
+            <div class="game-title">GTA 6</div>
+            <div class="game-description">Jogo de ação e aventura em mundo aberto da Rockstar Games, prometendo uma nova cidade expansiva, personagens complexos e uma narrativa rica.
+
+            </div>
+            <form id="addToCartForm3" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="GTA">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm3').submit();">
+            
+        </div>
+        <div class="game">
+            <img src="imagens/cs.webp" alt="Game 1">
+            <div class="game-title">COUNTER STRIKE</div>
+            <div class="game-description">Jogo de tiro em primeira pessoa focado em confrontos entre equipes de terroristas e contraterroristas.
+
+            </div>
+            <form id="addToCartForm4" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="counter strike">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm4').submit();">
+            
+        </div>
+        <div class="game">
+            <img src="imagens/fifa.png" alt="Game 1">
+            <div class="game-title">EA FC 24</div>
+            <div class="game-description">EA Sports FC 24 é um jogo de futebol que continua a tradição de realismo e emoção da série FIFA, com jogadores e times licenciados de ligas globais.
+            </div>
+            <form id="addToCartForm5" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="EA FC 24">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm5').submit();">
+            
+        </div>
+    </div>
+
+    <div class="game-library">
+        <div class="game">
+            <img src="imagens/miranha.avif" alt="Game 1">
+            <div class="game-title">SPIDER-MAN</div>
+            <div class="game-description">jogo de ação e aventura onde os jogadores controlam o super-herói Homem-Aranha, explorando uma Nova York aberta, enfrentando vilões icônicos e balanceando entre arranha-céus com acrobacias espetaculares.
+
+            </div>
+            <form id="addToCartForm6" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="spider-man">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm6').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/rocket.jpg" alt="Game 1">
+            <div class="game-title">ROCKET LEAGUE</div>
+            <div class="game-description">Rocket League é um jogo híbrido de futebol e corrida onde os jogadores controlam carros equipados com foguetes para marcar gols em arenas futuristas.
+
+            </div>
+            <form id="addToCartForm7" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="rocket league">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm7').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/fort.jpg" alt="Game 1">
+            <div class="game-title">FORTNITE</div>
+            <div class="game-description">Fortnite é um jogo de batalha real onde 100 jogadores lutam para ser o último sobrevivente em um mapa em constante mudança.
+
+            </div>
+            <form id="addToCartForm8" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="fortnite">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm8').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/pal.jpg" alt="Game 1">
+            <div class="game-title">PALWORLD</div>
+            <div class="game-description">Palworld é um jogo de aventura e sobrevivência onde os jogadores capturam, treinam e batalham com criaturas chamadas "Pals" em um mundo aberto vibrante. 
+
+            </div>
+            <form id="addToCartForm9" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="palworld">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm9').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/05.jpg" alt="Game 1">
+            <div class="game-title">ELDEN RING</div>
+            <div class="game-description">Elden Ring é um RPG de ação em mundo aberto desenvolvido pela FromSoftware, onde os jogadores exploram um vasto e interconectado reino de fantasia.
+
+            </div>
+            <form id="addToCartForm10" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="elden ring">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm10').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/04.jpg" alt="Game 1">
+            <div class="game-title">THE LAST OF US</div>
+            <div class="game-description">The Last of Us é um jogo de ação e aventura que segue a jornada emocional de Joel e Ellie em um mundo pós-apocalíptico dominado por infectados.
+
+            </div>
+            <form id="addToCartForm11" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="the last of us">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm11').submit();">
+            
+        </div>
+
+
+    </div>
+
+    <div class="game-library">
+        <div class="game">
+            <img src="imagens/03.jpg" alt="Game 1">
+            <div class="game-title">GOD OF WAR</div>
+            <div class="game-description">od of War é um jogo de ação e aventura que acompanha a jornada de Kratos e seu filho Atreus em um mundo mitológico nórdico.
+            </div>
+            <form id="addToCartForm12" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="god of war">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm12').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/lol.png" alt="Game 1">
+            <div class="game-title">LEAGUE OF LEGENDS</div>
+            <div class="game-description">League of Legends é um jogo de estratégia em equipe, onde jogadores escolhem campeões com habilidades únicas para enfrentar o time adversário em batalhas intensas em campo de batalha online. 
+
+            </div>
+            <form id="addToCartForm13" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="valorant">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm13').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/dbs.jpg" alt="Game 1">
+            <div class="game-title">DRAGON BALL SPARKING ZERO</div>
+            <div class="game-description">Dragon Ball Sparking Zero é um jogo de luta baseado no popular anime Dragon Ball, oferecendo combates intensos e personagens icônicos para os fãs da série. 
+
+            </div>
+            <form id="addToCartForm14" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="valorant">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm14').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/naruto.avif" alt="Game 1">
+            <div class="game-title">NARUTO STORM 4</div>
+            <div class="game-description"> Ultimate Ninja Storm 4 é um jogo de luta baseado no universo de Naruto, com batalhas épicas entre ninjas habilidosos e técnicas especiais. 
+
+            </div>
+            <form id="addToCartForm15" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="valorant">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm15').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/braw.jpg" alt="Game 1">
+            <div class="game-title">BRAWLHALLA</div>
+            <div class="game-description">Brawlhalla é um jogo de luta em plataforma free-to-play, onde jogadores controlam diversos personagens e competem em partidas frenéticas para ser o último em pé.
+
+            </div>
+            <form id="addToCartForm16" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="valorant">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm16').submit();">
+            
+        </div>
+
+        <div class="game">
+            <img src="imagens/body.jpg" alt="Game 1">
+            <div class="game-title">BODYCAM</div>
+            <div class="game-description">Bodycam é um jogo de aventura e investigação onde os jogadores assumem o papel de um policial equipado com uma câmera corporal, explorando cenas de crimes e resolvendo mistérios.
+
+            </div>
+            <form id="addToCartForm17" action="add.php" method="POST" style="display: none;">
+                <input type="hidden" name="nome" value="valorant">
+            </form>
+            
+            <!-- Botão que envia o formulário -->
+            <input type="submit" value="Adicionar ao Carrinho" class="btn" onclick="document.getElementById('addToCartForm17').submit();">
+            
+        </div>
+    </div>
+    </div>
+    <footer>
+        
+    </footer>
+</body>
+</html>
